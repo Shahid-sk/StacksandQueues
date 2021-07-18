@@ -23,6 +23,17 @@ public class Queue<T> {
 	}
 
 	/**
+	 * Method to delete first element form the queue
+	 * 
+	 * @return
+	 */
+	public T deQueue() {
+		QueueNode<T> tempNode = head;
+		head = head.next;
+		return tempNode.data;
+	}
+
+	/**
 	 * Method to print the queue
 	 */
 	public void printQueue() {
